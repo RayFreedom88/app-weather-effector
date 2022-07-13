@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Тестовое задание для РСХБ",
   "private": true,
+  "homepage": "https://rayfreedom88.github.io/app-weather-effector",
   "main": "src/index.js",
   "dependencies": {
     "effector": "22.3.0",
