@@ -32,8 +32,8 @@ export const SearchButton = styled.button`
   mask-repeat: no-repeat;
   background-color: #c3c3c6;
 
-  -webkit-mask-image: url(https://raw.githubusercontent.com/RayFreedom88/app-weather/0271b436588a75b0a056b384e6b928595b6cbff3/img/search.svg);
-  mask-image: url(https://raw.githubusercontent.com/RayFreedom88/app-weather/0271b436588a75b0a056b384e6b928595b6cbff3/img/search.svg);
+  -webkit-mask-image: url(https://raw.githubusercontent.com/RayFreedom88/app-weather-effector/d80271d74bd59767471570aded1393e05688f413/src/images/search.svg);
+  mask-image: url(https://raw.githubusercontent.com/RayFreedom88/app-weather-effector/d80271d74bd59767471570aded1393e05688f413/src/images/search.svg);
   -webkit-mask-size: 20px;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
