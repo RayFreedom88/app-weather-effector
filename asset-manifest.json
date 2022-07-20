@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/app-weather-effector/static/js/main.6e9b13a6.chunk.js",
-    "main.js.map": "/app-weather-effector/static/js/main.6e9b13a6.chunk.js.map",
+    "main.js": "/app-weather-effector/static/js/main.00d78142.chunk.js",
+    "main.js.map": "/app-weather-effector/static/js/main.00d78142.chunk.js.map",
     "runtime-main.js": "/app-weather-effector/static/js/runtime-main.9481aca6.js",
     "runtime-main.js.map": "/app-weather-effector/static/js/runtime-main.9481aca6.js.map",
-    "static/js/2.0b1daa50.chunk.js": "/app-weather-effector/static/js/2.0b1daa50.chunk.js",
-    "static/js/2.0b1daa50.chunk.js.map": "/app-weather-effector/static/js/2.0b1daa50.chunk.js.map",
+    "static/js/2.fc03dfc1.chunk.js": "/app-weather-effector/static/js/2.fc03dfc1.chunk.js",
+    "static/js/2.fc03dfc1.chunk.js.map": "/app-weather-effector/static/js/2.fc03dfc1.chunk.js.map",
     "index.html": "/app-weather-effector/index.html",
-    "static/js/2.0b1daa50.chunk.js.LICENSE.txt": "/app-weather-effector/static/js/2.0b1daa50.chunk.js.LICENSE.txt",
+    "static/js/2.fc03dfc1.chunk.js.LICENSE.txt": "/app-weather-effector/static/js/2.fc03dfc1.chunk.js.LICENSE.txt",
     "static/media/preloader.1e6f5a70.gif": "/app-weather-effector/static/media/preloader.1e6f5a70.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.9481aca6.js",
-    "static/js/2.0b1daa50.chunk.js",
-    "static/js/main.6e9b13a6.chunk.js"
+    "static/js/2.fc03dfc1.chunk.js",
+    "static/js/main.00d78142.chunk.js"
   ]
 }
