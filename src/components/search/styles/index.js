@@ -19,6 +19,7 @@ export const SearchWrapper = styled.div`
   border: 1px solid transparent;
   border-radius: 16px;
   background-color: #ffffff;
+  // transition: .2s linear;
 
   &:focus-within button {
     background-color: #050510;
@@ -38,6 +39,7 @@ export const SearchButton = styled.button`
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
   cursor: pointer;
+  transition: .2s linear;
 `;
 
 export const SearchInput = styled.input`

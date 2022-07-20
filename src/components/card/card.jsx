@@ -24,12 +24,48 @@ const Card = ({
   const ref = useRef();
 
   const handleCardClick = () => {
-    console.log("delete ", ref.current.innerHTML);
+    console.log("Click delete ", ref.current.innerHTML);
     onDelete(ref.current.innerHTML);
   };
 
+  const animationConfig = {
+    initial: { x: 300, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+    exit: { x: -300, opacity: 0 }
+  };
+
+  if (city === "Ошибка 429")
+    return (
+      <CardArticle
+        variants={animationConfig}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+      >
+        <CardContent>
+          <CardRow>
+            <CardCol>
+              <CardSpan fontSize="40px" ref={ref}>
+                {city}
+              </CardSpan>
+              <p>API-ключ OpenWeatherMap заблокирован!</p>
+            </CardCol>
+          </CardRow>
+
+          <CardRow>
+            <CardDelete onClick={handleCardClick}>x</CardDelete>
+          </CardRow>
+        </CardContent>
+      </CardArticle>
+    );
+
   return (
-    <CardArticle>
+    <CardArticle
+      variants={animationConfig}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <CardContent>
         <CardRow>
           <CardCol>

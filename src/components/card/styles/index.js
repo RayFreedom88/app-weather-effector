@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const CardArticle = styled.article`
+export const CardArticle = styled(motion.article)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

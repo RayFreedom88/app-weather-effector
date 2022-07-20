@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const WeatherSection = styled.section`
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
@@ -46,7 +47,7 @@ export const WeatherScroll = styled.div`
   padding-left: 10px;
 `;
 
-export const WeatherScrollWrap = styled.div`
+export const WeatherScrollWrap = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 20px;

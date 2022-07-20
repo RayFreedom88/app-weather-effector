@@ -35,6 +35,7 @@ const Search = () => {
           placeholder="Поиск по городам..."
           value={value}
           onChange={handleChange}
+          // autocomplete="off"
         />
         {isLoading && <Loader />}
       </SearchWrapper>

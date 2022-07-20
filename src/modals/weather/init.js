@@ -1,16 +1,16 @@
+import { mockDataError } from "../../utils/const";
 import {
   getLocalStorage,
   saveLocalStorage,
-  removeSearches
+  removeSearches,
 } from "../../utils/local-storage";
 import {
   $cities,
   $city,
-  updateCitiesEvent,
   addCitiesEvent,
   deleteCityEvent,
   fetchFx,
-  $isLoading
+  $isLoading,
 } from "./index";
 
 // fetchFx.doneData.watch((data) => {
@@ -20,6 +20,7 @@ import {
 // вариант 2
 $city.on(fetchFx.doneData, (_, dataCity) => {
   const localCities = getLocalStorage();
+
   if (localCities.length === 0 && dataCity.name) {
     saveLocalStorage(dataCity);
     return dataCity;
@@ -31,6 +32,15 @@ $city.on(fetchFx.doneData, (_, dataCity) => {
 
   if (dataCity.name) {
     saveLocalStorage(dataCity);
+    return dataCity;
+  }
+
+  if (dataCity.code === 429) {
+    console.log(
+      "API-ключ OpenWeatherMap заблокирован из-за превышения количества запросов в минуту. В бесплатной учетной записи количество запросов составляет 60 запросов в минуту! Замените API_KEY или попробуйте воспользоваьтся приложением на следующий день. И очистите local storage, чтобы при первом запуске приложения была довалена карточка с погодой города Москва ибо кнопку сброса я еще не успел доделать либо так задумывалось ;)"
+    );
+    removeSearches();
+    saveLocalStorage(mockDataError);
     return dataCity;
   }
 });

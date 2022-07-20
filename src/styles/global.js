@@ -61,4 +61,13 @@ export default createGlobalStyle`
   ::-webkit-scrollbar-corner {
     background: transparent;
   }
+
+  .weather-scroll-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 270px;
+    height: 100%;
+    background: inherit;
+  }
 `;
