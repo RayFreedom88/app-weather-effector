@@ -2,8 +2,6 @@
 
 Ссылка на [CodeSandbox](https://codesandbox.io/s/github/RayFreedom88/app-weather-effector)
 
-Тестовое задание для РСХБ
-
 ## Deploy:
 
 ### [Github Pages](https://rayfreedom88.github.io/app-weather-effector/)
