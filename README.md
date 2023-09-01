@@ -1,6 +1,6 @@
 # Приложение прогноза погоды app-weather-effector
 
-Проект сделан на [CodeSandbox](https://codesandbox.io/s/github/RayFreedom88/app-weather-effector).
+Ссылка на [CodeSandbox](https://codesandbox.io/s/github/RayFreedom88/app-weather-effector).
 
 Тестовое задание для РСХБ
 
