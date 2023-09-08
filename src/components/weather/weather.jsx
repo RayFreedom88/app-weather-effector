@@ -7,7 +7,7 @@ import {
   addCitiesEvent,
   deleteCityEvent,
   fetchWeatherByCity
-} from "../../modals/weather";
+} from "../../models/weather";
 import { getLocalStorage, removeSearches } from "../../utils/local-storage";
 import Card from "../card/card";
 import Search from "../search/search";

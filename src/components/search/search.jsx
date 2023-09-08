@@ -1,6 +1,6 @@
 import { useStore } from "effector-react";
 import { useState } from "react";
-import { $isLoading, fetchWeatherByCity } from "../../modals/weather";
+import { $isLoading, fetchWeatherByCity } from "../../models/weather";
 import Loader from "../loader/loader";
 import { SearchButton, SearchForm, SearchInput, SearchWrapper } from "./styles";
 

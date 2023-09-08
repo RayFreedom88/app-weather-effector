@@ -2,10 +2,9 @@ import { createStore, createEvent, createEffect } from "effector";
 import { attach } from "effector";
 import { API_KEY, URL_API } from "../../utils/const";
 
-export const $url = createStore(URL_API); // стор для url
-export const $city = createStore({}); // стор для данных одного города
+export const $url = createStore(URL_API);
+export const $city = createStore({});
 
-// эффект для POST запроса
 export const fetchFx = createEffect(async (url) => {
   const res = await fetch(url, {
     method: "POST"
@@ -22,7 +21,7 @@ export const fetchWeatherByCity = attach({
     `${source}weather?q=${params}&lang=ru&APPID=${API_KEY}`
 });
 
-export const $cities = createStore([]); // стор для хранения данных городов
+export const $cities = createStore([]);
 
 export const addCitiesEvent = createEvent("событие добавления городов");
 export const deleteCityEvent = createEvent(
