@@ -1,19 +1,18 @@
-import { useStore } from "effector-react";
-import { useState } from "react";
-import { $isLoading, fetchWeatherByCity } from "../../models/weather";
-import Loader from "../loader/loader";
-import { SearchButton, SearchForm, SearchInput, SearchWrapper } from "./styles";
+import { useStore } from 'effector-react';
+import { useState } from 'react';
+import { $isLoading, fetchWeatherByCity } from '../../models/model';
+import Loader from '../loader/loader';
+import { SearchButton, SearchForm, SearchInput, SearchWrapper } from './styles';
 
 const Search = () => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
   const isLoading = useStore($isLoading);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("add ", value);
     fetchWeatherByCity(value);
-    setValue("");
+    setValue('');
   };
 
   const handleChange = (e) => {

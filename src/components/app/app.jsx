@@ -1,5 +1,5 @@
 import Weather from "../weather/weather";
-import "../../models/init";
+// import "../../models/init";
 import { AppWrapper } from "./styles";
 
 const App = () => {

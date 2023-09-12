@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import search from '../../../assets/images/search.svg';
 
 export const SearchForm = styled.form`
   display: flex;
@@ -33,13 +34,13 @@ export const SearchButton = styled.button`
   mask-repeat: no-repeat;
   background-color: #c3c3c6;
 
-  -webkit-mask-image: url(https://raw.githubusercontent.com/RayFreedom88/app-weather-effector/d80271d74bd59767471570aded1393e05688f413/src/images/search.svg);
-  mask-image: url(https://raw.githubusercontent.com/RayFreedom88/app-weather-effector/d80271d74bd59767471570aded1393e05688f413/src/images/search.svg);
+  -webkit-mask-image: url(${search});
+  mask-image: url(${search});
   -webkit-mask-size: 20px;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
   cursor: pointer;
-  transition: .2s linear;
+  transition: 0.2s linear;
 `;
 
 export const SearchInput = styled.input`
@@ -49,5 +50,5 @@ export const SearchInput = styled.input`
   border: none;
   outline: none;
   background-color: transparent;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 `;

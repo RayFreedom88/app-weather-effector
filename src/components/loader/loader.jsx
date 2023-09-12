@@ -1,5 +1,5 @@
-import loader from "../../images/preloader.gif";
-import { LoaderImg } from "./styles";
+import loader from '../../assets/images/preloader.gif';
+import { LoaderImg } from './styles';
 
 const Loader = () => {
   return <LoaderImg src={loader} alt="идет загрузка" />;
